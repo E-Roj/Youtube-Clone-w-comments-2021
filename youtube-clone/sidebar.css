@@ -1,0 +1,36 @@
+.sidebar {
+    position: fixed;
+    background-color: white;
+    z-index: 200;
+    width: 72px;
+    left: 0;
+    bottom: 0;
+    top: 54px;
+    padding-top: 6px;
+}
+
+.sidebar-content {
+    /*
+        wasted hours, trying to put "display: flex" insode .sidebar [DON'T]
+    */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 74px;
+    cursor: pointer;
+}
+
+.sidebar-content:hover {
+    background-color: rgb(235, 235, 235);
+}
+
+.sidebar-content img {
+    height: 25px;
+    margin-bottom: 6px;
+}
+
+.sidebar-content div {
+    font-size: 10px;
+}

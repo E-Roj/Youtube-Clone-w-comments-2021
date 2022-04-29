@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head> <!-- The tags in <head> will not show up on the website-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Clone</title>
+    <!-- <style> here we import the font (from fonts.google.com) -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+    </style> 
+    <!-- <link> links files -->
+    <!-- Here we link our CSS files that we created in the same directory on our device,
+        we could write the CSS code in <style> but it would make it harder to read and understand
+    -->
+    <link rel="stylesheet" href="video.css">
+    <link rel="stylesheet" href="universal.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="sidebar.css">
+</head>
+<body>
+    <div class="header"> <!-- the header NAV for our Youtube-Clone project-->
+        <div  class="h-left-section"> <!-- h = header-->
+            <img class="hamburger" src="header-icons/hamburger-menu.svg">
+            <img class="logo" src="header-icons/youtube-logo.svg">
+        </div>
+        <div class="search-and-submit"> <!--you can call it "middle-section"-->
+            <input class="search-input" type="text" name="search bar" placeholder="Search"> <!-- In placeholder we write what we want to show up in the input box-->
+            <button class="search">
+                <img class="s-i" src="header-icons/search-icon.svg"> <!-- s-i = Search-Icon -->
+                <div class="tooltip">Search</div> <!-- tooltips show up when you hover over an element, in this case, the search icon-->
+            </button>
+            <button class="voice">
+                <img src="header-icons/voice-search-icon.svg">
+                <div class="tooltip">Voice Search</div>
+            </button>
+        </div>
+        <div class="h-right-section">
+            <img class="upload" src="header-icons/upload-button.svg">
+            <img class="apps" src="header-icons/youtube-apps.svg">
+            <div class="notifications-box">
+                <img class="notifications" src="header-icons/notifications.svg">
+                <div class="notifications-count">3</div>
+            </div>
+                
+            <img class="user-profile" src="header-icons/profile-picture.jpg">
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <div class="sidebar-content">
+            <img src="sidebar-icons/home.svg" alt=""> <!-- you can delete the empty alt=""s -->
+            <div>Home</div>
+        </div>
+        <div class="sidebar-content">
+            <img src="sidebar-icons/explore.svg" alt="">
+            <div>Explore</div>
+        </div>
+        <div class="sidebar-content">
+            <img src="sidebar-icons/subscriptions.svg" alt="">
+            <div>Subscriptions</div>
+        </div>
+        <div class="sidebar-content">
+            <img src="sidebar-icons/originals.svg" alt="">
+            <div>Originals</div>
+        </div>
+        <div class="sidebar-content">
+            <img src="sidebar-icons/youtube-music.svg" alt="">
+            <div>YouTube Music</div>
+        </div>
+        <div class="sidebar-content">
+            <img src="sidebar-icons/library.svg" alt="">
+            <div>Library</div>
+        </div>
+    </div>
+
+    <div class="video-grid"> <!-- contains ALL the video-cards (thumbnail, creator, title, stats, and time-stamp) of the page-->
+        <div class="video-preview"> <!-- is a video-card-->
+            <div class="video-thumbnail"> <!--the video's thumbnail >must be an image<-->
+                <img class="thumbnail" src="thumbnails/MKBHD-w-google-ceo.webp">
+                <div class="time-stamp"> <!-- show how long the video is (name kinda missleading, sorry)-->
+                    <p>14:20</p>
+                </div>
+            </div>
+            <div class="video-info-grid"> <!-- this contains the rest of video-card's inforamtion (excluding thumbnail + time-stamp)-->
+                <div class="profile-area"> <!-- an area contains creator image + works as a devider between (title & stats) from (profile picture & the space under it)-->
+                    <img class="creator-logo" src="creator-icons/MKBHD.jpeg">
+                </div>
+                <div class="written-video-info">
+                    <p class="video-title">
+                        Talking Tech and AI with Google CEO Sundar Pichai!
+                    </p>
+                    <p class="video-author">
+                        Marques Brownlee
+                    </p>
+                    <p class="video-info">
+                        3.4M views &#183; 6 months ago
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-preview">
+            <div class="video-thumbnail">
+                <img class="thumbnail" src="thumbnails/markplier-tntl.webp">
+                <div class="time-stamp">
+                    <p>8:22</p>
+                </div>
+            </div>
+            <div class="video-info-grid">
+                <div class="profile-area">
+                    <img class="creator-logo" src="creator-icons/Markiplier.jpeg">
+                </div>
+                <div class="written-video-info">
+                    <p class="video-title">
+                        Try Not To Laugh Challenge #9
+                    </p>
+                    <p class="video-author">
+                        Markiplier
+                    </p>
+                    <p class="video-info">
+                        19M views &#183; 4 years ago
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-preview">
+            <div class="video-thumbnail">
+                <img class="thumbnail" src="thumbnails/ssswolf.webp">
+                <div class="time-stamp">
+                    <p>9:13</p>
+                </div>
+            </div>
+            <div class="video-info-grid">
+                <div class="profile-area">
+                    <img class="creator-logo" src="creator-icons/SSS.jpeg">
+                </div>
+                <div class="written-video-info">
+                    <p class="video-title">
+                        Crazy Tik Toks Taken Moments Before DISASTER
+                    </p>
+                    <p class="video-author">
+                        SSSniperWolf
+                    </p>
+                    <p class="video-info">
+                        12M views &#183; 1 year ago
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-preview">
+            <div class="video-thumbnail">
+                <img class="thumbnail" src="thumbnails/veritasium.webp">
+                <div class="time-stamp">
+                    <p>22:09</p>
+                </div>
+            </div>
+            <div class="video-info-grid">
+                <div class="profile-area">
+                    <img class="creator-logo" src="creator-icons/Veritasium.jpeg">
+                </div>
+                <div class="written-video-info">
+                    <p class="video-title">
+                        The Simplest Math Problem No One Can Solve - Collatz Conjecture
+                    </p>
+                    <p class="video-author">
+                        Veritasium
+                    </p>
+                    <p class="video-info">
+                        18M views &#183; 4 months ago
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-preview">
+            <div class="video-thumbnail">
+                <img class="thumbnail" src="thumbnails/cs-dojo.webp">
+                <div class="time-stamp">
+                    <p>11:17</p>
+                </div>
+            </div>
+            <div class="video-info-grid">
+                <div class="profile-area">
+                    <img class="creator-logo" src="creator-icons/CS-Dojo.jpeg">
+                </div>
+                <div class="written-video-info">
+                    <p class="video-title">
+                        Kadane's Algorithm to Maximum Sum Subarray Problem
+                    </p>
+                    <p class="video-author">
+                        CS Dojo
+                    </p>
+                    <p class="video-info">
+                        519K views &#183; 5 years ago
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-preview">
+            <div class="video-thumbnail">
+                <img class="thumbnail" src="thumbnails/mr-beast-challenge.webp">
+                <div class="time-stamp">
+                    <p>19:59</p>
+                </div>
+            </div>
+            <div class="video-info-grid">
+                <div class="profile-area">
+                    <img class="creator-logo" src="creator-icons/MR-Beast.jpeg">
+                </div>
+                <div class="written-video-info">
+                    <p class="video-title">
+                        Anything You Can Fit In The Circle I&#39;ll  Pay For
+                    </p>
+                    <p class="video-author">
+                        MrBeast
+                    </p>
+                    <p class="video-info">
+                        141M views &#183; 1 year ago
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-preview">
+            <div class="video-thumbnail">
+                <img class="thumbnail" src="thumbnails/real-life-lore.webp">
+                <div class="time-stamp">
+                    <p>10:13</p>
+                </div>
+            </div>
+            <div class="video-info-grid">
+                <div class="profile-area">
+                    <img class="creator-logo" src="creator-icons/RealLifeLore.jpeg">
+                </div>
+                <div class="written-video-info">
+                    <p class="video-title">
+                        Why Planes Don&#39;t Fly Over Tibet
+                    </p>
+                    <p class="video-author">
+                        RealLifeLore
+                    </p>
+                    <p class="video-info">
+                        6.6M views &#183; 1 year ago
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="video-preview">
+            <div class="video-thumbnail">
+                <img class="thumbnail" src="thumbnails/tech-vision.webp">
+                <div class="time-stamp">
+                    <p>7:12</p>
+                </div>
+            </div>
+            <div class="video-info-grid">
+                <div class="profile-area">
+                    <img class="creator-logo" src="creator-icons/Tech-Vidion.jpeg">
+                </div>
+                <div class="written-video-info">
+                    <p class="video-title">
+                        Inside The World&#39;s Biggest Passenger Plane
+                    </p>
+                    <p class="video-author">
+                        Tech Vision
+                    </p>
+                    <p class="video-info">
+                        3.7M views &#183; 10 months ago
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+/* the astric selects everything in our project, then we modify them*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* if we change anything in >body< it will over-run 
+    what we ordered when mentioning >*<.
+    Coz it's more specific
+*/
+
+body {
+    background-color: rgb(250, 250, 250);
+    margin: 0px;
+    padding-top: 80px;
+    padding-left: 92px;
+    padding-right: 24px;
+}
