@@ -9,7 +9,7 @@ The status of this project is INCOMPLETE, as it lacks or suffers from:
  4. having repetitive code
 
 Notes | 
-* The title mentions the year 2021, however the project's first version was created and finished in the fiscal year 2022. The reason being to not to misslead you into believing this is clone is one of the letest youtube clones on github.
+* The title mentions the year 2021, however the project's first version was created and finished in the fiscal year 2022. The reason being to not to misslead you into believing this clone is one of the letest youtube clones on github.
 * the link for the tutorial is ( https://www.youtube.com/watch?v=G3e-cpL7ofc&ab_channel=SuperSimpleDev ).
 
 
